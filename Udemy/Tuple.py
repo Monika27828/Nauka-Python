@@ -1,0 +1,13 @@
+Tax = (4,7,8,23)
+print(Tax[2])
+print(Tax[-1])
+print(Tax)
+print(Tax.index(7))
+print(Tax.count(8))
+print(max(Tax))
+#Tax.revert
+TaxList = list(Tax)
+TaxList.append(30)
+print(TaxList)
+newTax = tuple(TaxList)
+print(newTax)

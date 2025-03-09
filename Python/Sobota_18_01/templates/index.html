@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1> Witaj w aplikacji Flask</h1>
+    <h2> Add user </h2>
+    <form method="POST" action="/add_user">
+        <label for="username">Username:<</label>><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="email">Email</label>><br>
+        <input type="text" id="email" name="email" required><br><br>
+        <button type="submit">Add User</button>
+    </form>
+
+    <h2>Users list</h2>
+    <ul>
+        {% for user in users %}
+            <li>{{user.username}} - {{user.email}}</li>
+        {% endfor %}}
+    </ul>
+</body>
+</html>
