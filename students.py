@@ -7,3 +7,4 @@ print(students[3])
 
 print('Wpisywanie listy studentow za pomoca petli:')
 for item in students:
+# for item in students:
